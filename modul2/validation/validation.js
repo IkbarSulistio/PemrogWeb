@@ -1,12 +1,12 @@
 document.getElementById('registrationForm').addEventListener('submit', function(event) {
     event.preventDefault(); 
 
-    const nama = document.getElementById('nama').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const alamat = document.getElementById('alamat').value.trim();
+    const nama = document.getElementById('nama').value;
+    const email = document.getElementById('email').value;
+    const alamat = document.getElementById('alamat').value;
 
-    if (nama === '' || email === '' || alamat === '') {
-        alert('Semua data harus diisi.');
+    if (nama === '') {
+        alert('Nama harus diisi!');
         return;
     }
 
