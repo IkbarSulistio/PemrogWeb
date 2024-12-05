@@ -1,7 +1,6 @@
 const todoInput = document.getElementById('todo-input');
 const todoList = document.getElementById('todo-list');
 
-// Menambahkan item baru ke dalam daftar
 function addTodo() {
     const taskText = todoInput.value.trim();
     if (taskText === '') return;
